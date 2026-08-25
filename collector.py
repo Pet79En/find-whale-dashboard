@@ -1,8 +1,15 @@
 import os
 import pandas as pd
 from concurrent.futures import ThreadPoolExecutor
-from hyperliquid.info import Info
-from hyperliquid.utils import constants
+try:
+    from hyperliquid.info import Info
+except ModuleNotFoundError:
+    from hyperliquid.utils.types import Info
+
+try:
+    from hyperliquid.utils import constants
+except ModuleNotFoundError:
+    from hyperliquid import constants
 from evaluator import WhaleEvaluator
 from ranker import CustomWhaleRanker
 

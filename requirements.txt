@@ -2,4 +2,4 @@ streamlit
 pandas
 requests
 beautifulsoup4
-hyperliquid==0.4.30
+hyperliquid
