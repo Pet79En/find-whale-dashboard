@@ -1,11 +1,7 @@
 import os
 import pandas as pd
 from concurrent.futures import ThreadPoolExecutor
-try:
-    from hyperliquid.info import Info
-except ModuleNotFoundError:
-    from hyperliquid.utils.types import Info
-
+from hyperliquid.info import Info
 try:
     from hyperliquid.utils import constants
 except ModuleNotFoundError:
